@@ -14,7 +14,7 @@ export const PlugCellStyles = css`
 export const welcomeTitleStyles = css`
   ${font_header_1_bold};
   color: ${({theme}) => theme.colors.gray000};
-  background: linear-gradient(to right, rgb(141, 252, 253), rgb(201, 254, 255));
+  background: rgb(225, 218, 207);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -23,13 +23,13 @@ export const welcomeTitleStyles = css`
   @keyframes glow {
     0% {
       text-shadow:
-        0 0 5px rgb(141, 252, 253),
-        0 0 10px rgb(201, 254, 255);
+        0 0 5px rgb(225, 218, 207),
+        0 0 10px rgb(163 168 164);
     }
     100% {
       text-shadow:
-        0 0 10px rgb(141, 252, 253),
-        0 0 20px rgb(201, 254, 255);
+        0 0 10px rgb(225, 218, 207),
+        0 0 20px rgb(61 64 70);
     }
   }
 `;
