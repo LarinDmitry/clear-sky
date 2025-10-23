@@ -1,0 +1,1 @@
+import{r as n,am as s,an as r}from"./index-DbadEP-_.js";function o(e){return Object.keys(e).length===0}function u(e=null){const t=n.useContext(s);return!t||o(t)?e:t}const a=r();function c(e=a){return u(e)}export{c as a,u};
