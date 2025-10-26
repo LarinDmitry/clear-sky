@@ -9,6 +9,7 @@ import {welcomeTitleStyles} from 'services/GlobalStyled';
 import {selectUserConfiguration} from 'store/userSlice';
 import {localization} from './WelcomeUtils';
 import Background from 'assets/images/background.webp';
+import Logo from 'assets/images/logo.webp';
 import {font_body_2_reg, font_header_6_bold} from 'theme/fonts';
 
 const WelcomeView = () => {
@@ -24,6 +25,7 @@ const WelcomeView = () => {
 
   return (
     <Wrapper>
+      <Logotype />
       <LanguageSelector language={language} />
       <Content>
         <Title>{WELCOME}</Title>
@@ -45,6 +47,22 @@ const Wrapper = styled.div`
   align-items: center;
   overflow: hidden;
   perspective: 800px;
+`;
+
+const Logotype = styled.div`
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  height: 11rem;
+  width: 11rem;
+  background: url(${Logo}) center center / contain no-repeat;
+
+  @media ${({theme}) => theme.breakpoints.maxTb} {
+    height: 8rem;
+    width: 8rem;
+    top: 1rem;
+    left: 1rem;
+  }
 `;
 
 const Content = styled.div`

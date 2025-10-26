@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import {useAppDispatch} from 'services/hooks';
-import {welcomeTitleStyles} from 'services/GlobalStyled';
 import {setLanguage} from 'store/userSlice';
 import {languageOptions} from 'services/GlobalUtils';
+import {font_header_1_bold} from 'theme/fonts';
 
 interface Props {
   language: string;
@@ -33,8 +33,6 @@ const Image = styled.div`
   margin-right: 0.5rem;
 `;
 
-const Label = styled.div``;
-
 const Wrapper = styled(Select)`
   &.MuiInputBase-root {
     z-index: 1;
@@ -50,6 +48,10 @@ const Wrapper = styled(Select)`
       flex-direction: column;
       align-items: center;
       min-width: 7rem;
+
+      @media ${({theme}) => theme.breakpoints.maxTb} {
+        padding: 1.5rem 0;
+      }
     }
 
     .MuiSvgIcon-root.MuiSelect-icon {
@@ -63,13 +65,14 @@ const Wrapper = styled(Select)`
     ${Image} {
       margin-right: 0;
     }
-
-    ${Label} {
-      ${welcomeTitleStyles};
-      margin: 0;
-      font-size: 1rem;
-    }
   }
+`;
+
+const Label = styled.div`
+  ${font_header_1_bold};
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1rem;
 `;
 
 export default LanguageSelector;
