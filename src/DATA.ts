@@ -153,10 +153,10 @@ export const latestZveks = [
         damageByDay: [0, 0, 0, 0, 0, 0],
       },
       {
-        damage: 4797242522,
+        damage: 1420821353104,
         date: '11.25',
         guildTotal: 1055022942841880,
-        damageByDay: [425214640, 130987376338, 363710739644, 307103635133, 613797144827, 4797242522],
+        damageByDay: [425214640,	130987376338,	363710739644,	307103635133,	613797144827,	4797242522],
       },
     ],
   },
@@ -709,7 +709,7 @@ export const teamDetails = [
   {
     name: 'Mpozb',
     damageDealer: 'mokman',
-    quality: 'b+',
+    quality: 'a-',
     stars: 10,
     temple: 10,
   },
@@ -765,7 +765,7 @@ export const teamDetails = [
   {
     name: 'r2das7ff',
     damageDealer: 'aspen',
-    quality: 'b+',
+    quality: 'a-',
     stars: 10,
     temple: 10,
   },
@@ -891,7 +891,7 @@ export const teamDetails = [
   {
     name: 'Unbelievable',
     damageDealer: 'aspen',
-    quality: 'b+',
+    quality: 'a-',
     stars: 10,
     temple: 10,
   },
